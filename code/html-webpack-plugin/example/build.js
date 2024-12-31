@@ -5,6 +5,7 @@ const compiler = webpack({
   entry: './index.js',
   output: {
     filename: '[name].[contenthash:8].js',
+    publicPath: './',
     clean: true
   },
   optimization: {
